@@ -44,6 +44,7 @@ public class ClusterClient {
 		 discoSpi.setIpFinder(ipFinder);
 
 		 IgniteConfiguration cfg = new IgniteConfiguration();
+		 
 		 cfg.setDiscoverySpi(discoSpi);
 		     
 		 Ignite ignite = Ignition.start(cfg);
